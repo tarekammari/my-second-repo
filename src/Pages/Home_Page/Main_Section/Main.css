@@ -1,0 +1,48 @@
+.Main_Home_Page {
+    display: flex;
+    background-color: var(--primary-green);
+    align-items: top;
+    justify-content: space-between;
+    height: 350px;
+}
+
+@media (max-width: 768px) {
+    .Main_Home_Page {
+        padding: 1em 6vw;
+    }
+
+    .RestaurantFood {
+        margin-top: 1rem;
+        align-self: center;
+        width: 35vw;
+        height: 30vw;
+        background-color: rebeccapurple;
+    }
+}
+
+/* Media query for mobile devices (480px and smaller) */
+@media (min-width: 769px) {
+    .Main_Home_Page {
+        padding: 1em 10vw;
+        justify-content: space-between;
+        
+    }
+
+    .RestaurantFood {
+        width: 20vw;
+        height: 20vw;
+        margin-top: 1rem;
+    }
+
+}
+
+.RestaurantFood {
+    border-radius: 16px;
+    width: 35vw;
+    height: 35vw;
+    max-width: 400px;
+    max-height: 420px;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+

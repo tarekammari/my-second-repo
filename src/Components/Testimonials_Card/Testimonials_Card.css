@@ -1,0 +1,108 @@
+.Testimonials_Card {
+    padding: 20px;
+    width: 400px;
+    height: 220px;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+    font-family: var(--font-karla-medium);
+    border: 1px solid var(--gray);
+    box-shadow: 6px 6px 6px -1px rgba(0, 0, 0, 0.2);
+    row-gap: 0;
+}
+
+.Testimonials_Card .Starts,
+.Testimonials_Card .review_title,
+.Testimonials_Card .review_body
+ {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+.Testimonials_Card .Starts {
+    grid-area: 1 / 1 / 1 / 3;
+}
+
+.Testimonials_Card .review_title {
+    grid-area: 2 / 1 / 2 / 3;
+}
+
+.Testimonials_Card .review_body {
+    grid-area: 3 / 1 / 3 / 3;
+    width: 250px;
+}
+
+.Testimonials_Card .reviewer_name {
+    grid-area: 4 / 2;
+    border-top: 1px solid var(--gray);
+}
+
+.Testimonials_Card .date {
+    grid-area: 5 / 2;
+}
+
+.Testimonials_Card .reviewer_image {
+    grid-area: 6 / 1 / 4 / 1 ;
+}
+
+.Starts {
+    display: flex;
+    gap: 4px;
+}
+
+.Starts img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.review_title {
+    color: black;
+    font-size: var(--font-size-section-title);
+    font-family: var(--font-karla-regular);
+    font-weight: 700;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 18ch;
+}
+
+
+.review_body {
+  
+    height: 60px;
+    display: -webkit-box;
+    text-wrap: wrap;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: var(--font-size-pargraph);
+    font-family: var(--font-karla-regular);
+    font-weight: 100;
+    color: black;
+}
+
+.reviewer_image {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+
+}
+
+.reviewer_name {
+    font-family: var(--font-karla-regular);
+    color: var(--dark_gray);
+    padding: 20px 0 0 10px;
+}
+
+.date {
+    font-family: var(--font-karla-regular);
+    color: var(--dark_gray);
+    padding: 0 0 10px 10px;
+}

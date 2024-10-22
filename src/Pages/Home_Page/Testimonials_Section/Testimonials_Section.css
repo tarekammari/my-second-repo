@@ -1,0 +1,20 @@
+.Testimonials_Section {
+    padding: 50px 10vw ;
+    border-top: 1px solid var(--gray);
+    justify-items: center;
+}
+
+.Testimonials_Cards {
+    width: 75%;
+    padding: 5vh 10vw;
+    gap: 24px;
+    display: flex;
+    justify-content: start;    
+    overflow-x: auto; 
+    white-space: nowrap; 
+    scroll-snap-type: x mandatory;
+}
+
+.Testimonials_Cards::-webkit-scrollbar {
+    display:"contents"; /* Optional: hide the scrollbar for a cleaner look */
+}

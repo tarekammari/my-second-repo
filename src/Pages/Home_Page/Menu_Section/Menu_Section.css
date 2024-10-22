@@ -1,0 +1,44 @@
+.Menu_Section {
+    display: block;
+    padding: 100px 10vw ;
+    justify-content: center;
+    align-items: top;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--gray);
+    margin-top: 100px;
+
+}
+
+@media (max-width: 768px) {
+    .Menu_Section {
+        padding: 50px 6vw;
+    }
+}
+
+.dishes_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.Section_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Section_title {
+    color: black;
+    font-family: var(--font-markazi-regular);
+    font-size: var(--font-size-sub-title);
+    text-align: center;
+}
+
+Button {
+    margin: 0;
+}
+
+
+
+

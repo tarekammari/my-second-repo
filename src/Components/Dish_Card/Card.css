@@ -1,0 +1,107 @@
+.description  {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: var(--font-karla-regular);
+    font-size: var(--font-size-card-title);    
+    margin-top: 10px;
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid var(--gray);
+    border-radius: 16px 16px 0 0;
+    
+    width: 265px;
+    height: 440px;
+    box-shadow: 6px 6px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.name_price {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish_name, .dish_price {
+    font-family: var(--font-markazi-regular);
+    font-size: var(--font-size-large-pargraph);
+    color: black;
+    width: auto;
+}
+
+.dish_price {
+    color: var(--secondary-orange);
+}
+
+.Card_image {
+    width: 265px;
+    height: 185px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.order_delivery_button {
+    border: 0px;
+    font-family: var(--font-karla-regular);
+    font-size: var(--font-size-card-title);
+    font-weight: 700;    
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.delivery_icon {
+    margin-left: 16px;
+    width: 24px;
+}
+
+.Card_details {
+    padding: 16px 24px;
+}
+
+@media (max-width: 768px) {
+
+    .Card {
+        display: grid;
+        width: 100%;
+        height: 30vw;        
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        border-radius: 16px;
+        gap: 0px;
+    }
+    
+    
+    .Card .name_price {
+        grid-area: 1 / 1;
+    }
+    
+    .Card .description {
+        grid-area: 2 / 1;
+        height: 10vw;
+    }
+    
+    .Card .order_delivery_button {
+        grid-area: 3 / 1;
+    }
+    
+    .Card .Card_image {
+        grid-area: 1 / 2 / 4 / 3; 
+    }
+
+    .Card_image {
+        width: 100%;
+        height: 30vw;
+        object-fit: cover;
+        border-radius: 0 16px 16px 0;
+    }
+
+    .description {
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Number of lines before cutting off */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    } 
+}

@@ -1,5 +1,78 @@
+@font-face {
+  font-family: 'MarkaziText_Regular';
+  src: url('./Sources/Fonts/MarkaziText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MarkaziText_Medium';
+  src: url('./Sources/Fonts/MarkaziText-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MarkaziText_Bold';
+  src: url('./Sources/Fonts/MarkaziText-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla_Regular';
+  src: url('./Sources/Fonts/Karla-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla_Medium';
+  src: url('./Sources/Fonts/Karla-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla_Bold';
+  src: url('./Sources/Fonts/Karla-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary-green: #495E57;
+  --primary-yellow: #F4CE14;
+
+  --secondary-orange: #EE9972;
+  --secondary-lightOrange: #FBDABB;
+
+  --light: #EDEFEE;
+  --dark: #333333;
+  --gray: rgba(181, 181, 181, 0.6);
+  --dark_gray: rgba(121, 121, 121, 1.0);
+
+  --font-markazi-regular: 'MarkaziText_Regular';
+  --font-markazi-medium: 'MarkaziText_Medium';
+  --font-markazi-bold: 'MarkaziText_Bold';
+
+  --font-karla-regular: 'Karla_Regular';
+  --font-karla-medium: 'Karla_Medium';
+  --font-karla-bold: 'Karla_Bold';
+
+  --font-size-display-title: 64px;
+  --font-size-sub-title: 40px;
+  --font-size-large-pargraph: 24px;
+  --font-size-section-title: 20px;
+  --font-size-card-title: 18px;
+  --font-size-pargraph: 16px;
+
+}
+
+
+
+
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

@@ -1,0 +1,48 @@
+.Descripton {
+    display: block;
+    flex-direction: column; /* Stack items vertically */    
+    padding: 0px 0px 20px 0px;
+    width: 50vw;
+    max-width: 320px;
+}
+
+h1 {
+    font-family: var(--font-markazi-regular);
+    font-size: 72px;
+    color: var(--primary-yellow);
+    font-weight: 300;
+    height: 65px;
+    width: 4.5em;
+}
+
+h2 {
+    font-family: var(--font-markazi-regular);
+    font-size: var(--font-size-sub-title);
+    color: white;
+    font-weight: 500;
+}
+
+p {
+    font-family: var(--font-karla-bold) ;
+    font-size: var(--font-size-large-pargraph); 
+    color: white;
+    margin-top: 10px;
+
+}
+
+Button {
+    margin-top: 20px;
+}
+
+@media (max-width: 630px) {    
+    p {
+        font-size: var(--font-size-card-title); 
+    }
+
+    .Descripton {        
+        width: 250px;
+        
+    }
+
+}
+
