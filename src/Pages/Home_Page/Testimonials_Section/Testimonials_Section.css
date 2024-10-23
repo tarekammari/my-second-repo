@@ -6,22 +6,10 @@
     justify-content: start;
     overflow-x: auto;
     white-space: nowrap;
-    scroll-snap-type: x mandatory;
-    
-    /* Hide scrollbar */
-    scrollbar-width: none; /* For Firefox */
+    scroll-snap-type: x mandatory;       
+    scrollbar-width: none; 
 }
 
 .Testimonials_Cards::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, and Opera */
 }
-
-.Testimonials_Cards.active {
-    cursor: grabbing; /* Change cursor while dragging */
-    cursor: -webkit-grabbing;
-}
-.Testimonials_Cards {
-    cursor: grab;
-    cursor: -webkit-grab;
-}
-

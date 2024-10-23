@@ -1,5 +1,5 @@
 import "../Dish_Card/Card.css"
-import Delivery_Icon from "../../Sources/Images/delivery.png"
+import Delivery_Icon from "../../Sources/Images/delivery_gray.png"
 
 export default function Card (props) {
     return (

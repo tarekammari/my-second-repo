@@ -1,5 +1,8 @@
 
 .About_Section {
-    height: 200px;
     border: 1px solid var(--gray);
+    color: black;
+}
+.About_Title, .About_Adress, .About_Description {
+    color: black;
 }

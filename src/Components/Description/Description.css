@@ -1,6 +1,6 @@
 .Descripton {
     display: block;
-    flex-direction: column; /* Stack items vertically */    
+    flex-direction: column;
     padding: 0px 0px 20px 0px;
     width: 50vw;
     max-width: 320px;
@@ -24,25 +24,22 @@ h2 {
 
 p {
     font-family: var(--font-karla-bold) ;
-    font-size: var(--font-size-large-pargraph); 
+    font-size: var(--font-size-large-pargraph);
     color: white;
     margin-top: 10px;
 
 }
 
-Button {
+.Descripton Button {
     margin-top: 20px;
 }
 
-@media (max-width: 630px) {    
+@media (max-width: 630px) {
     p {
-        font-size: var(--font-size-card-title); 
+        font-size: var(--font-size-card-title);
     }
 
-    .Descripton {        
+    .Descripton {
         width: 250px;
-        
     }
-
 }
-

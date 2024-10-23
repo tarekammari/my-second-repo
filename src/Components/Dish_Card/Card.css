@@ -49,6 +49,7 @@
     align-items: center;
     margin-top: 10px;
     background-color: white;
+    color: var(--dark_gray);
 }
 
 .delivery_icon {
@@ -65,32 +66,39 @@
     .Card {
         display: grid;
         width: 100%;
-        height: 30vw;        
+        height: 30vw;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 2fr 1fr;
         border-radius: 16px;
         gap: 0px;
     }
     
-    
-    .Card .name_price {
-        grid-area: 1 / 1;
-    }
-    
-    .Card .description {
-        grid-area: 2 / 1;
-        height: 10vw;
-    }
-    
-    .Card .order_delivery_button {
-        grid-area: 3 / 1;
-    }
-    
-    .Card .Card_image {
-        grid-area: 1 / 2 / 4 / 3; 
+    .name_price {
+        grid-column: 1;
+        grid-row: 1;        
     }
 
+    .dish_name, .dish_price{
+        font-size: var(--font-size-large-pargraph);
+        
+    }
+    
+    .description {
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 2vw;
+    }
+    
+    .order_delivery_button {
+        grid-column: 1;
+        grid-row: 3;
+        margin-top: 2vw;
+    }
+        
+
     .Card_image {
+        grid-column: 2 ;
+        grid-row: 1 / 3;
         width: 100%;
         height: 30vw;
         object-fit: cover;
@@ -104,4 +112,14 @@
         overflow: hidden;
         text-overflow: ellipsis;
     } 
+}
+
+@media (max-width: 540px) {
+    .description {
+        font-size: 14px;
+    }
+
+    .order_delivery_button {
+        display: none;
+    }
 }
