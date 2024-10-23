@@ -20,7 +20,7 @@
     }
 }
 
-/* Media query for mobile devices (480px and smaller) */
+
 @media (min-width: 769px) {
     .Main_Home_Page {
         padding: 1em 10vw;
@@ -46,3 +46,18 @@
     margin-top: 1rem;
 }
 
+@media (max-width: 380px) {
+    .Main_Home_Page {
+        padding: 1em 6vw;
+        flex-wrap: wrap;
+        height: 90vh;
+    }
+
+    .RestaurantFood {
+        margin-top: 1rem;
+        width: 100vw;
+        height: 75vw;
+        background-color: rebeccapurple;
+
+    }
+}

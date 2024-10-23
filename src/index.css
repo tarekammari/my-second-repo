@@ -61,12 +61,14 @@
   --font-karla-bold: 'Karla_Bold';
 
   --font-size-display-title: 64px;
+  --font-size-big: 56px;
   --font-size-sub-title: 40px;
   --font-size-normal: 32px;
   --font-size-large-pargraph: 24px;
   --font-size-section-title: 20px;
   --font-size-card-title: 18px;
   --font-size-pargraph: 16px;
+  --font-size-mini: 14px;
 
 }
 

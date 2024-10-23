@@ -6,4 +6,11 @@
     font-weight: 900;
     border-radius: 24px;
     border: 0px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.Button:hover {
+    background-color: var(--secondary-orange);
+    
+    
 }

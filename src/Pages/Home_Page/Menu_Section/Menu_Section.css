@@ -29,9 +29,10 @@
 }
 
 .Section_title {
-    color: black;
-    font-family: var(--font-markazi-regular);
-    font-size: var(--font-size-sub-title);
+    color: var(--dark);
+    font-family: var(--font-karla-regular);
+    font-size: var(--font-size-normal);
+    font-weight: 700;
     text-align: center;
 }
 
@@ -39,6 +40,12 @@ Button {
     margin: 0;
 }
 
-
-
-
+@media (max-width: 380px) {
+    .Section_title {
+        
+        font-family: var(--font-karla-regular);
+        font-size: var(--font-size-section-title);
+        font-weight: 700;
+        text-align: center;
+    }
+}

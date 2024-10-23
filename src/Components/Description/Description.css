@@ -43,3 +43,14 @@ p {
         width: 250px;
     }
 }
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: var(--font-size-big);
+    }
+
+    h2 {
+        font-size: var(--font-size-normal);
+    }
+}

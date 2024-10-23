@@ -103,17 +103,19 @@ body {
     .nav.open ul {
       display: block; /* Show the nav links when the menu is open */
       position: absolute;
-      top: 60px;
-      right: 0;
-      background-color: var(--primary-green);
+      top: 90px;
+      left: 0 ;
+      background-color: white;
       padding: 10px;
-      width: 100%;
+      width: 50%;
       text-align: center;
+      box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
     }
   
     .nav.open ul li {
-      display: block;
-      margin: 10px 0;
+      border-bottom: 1px solid var(--gray);
+      display: flex;
+      margin: 40px 20px;
     }
 
     .little-lemon-logo {

@@ -1,8 +1,83 @@
 
 .About_Section {
-    border: 1px solid var(--gray);
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 100px 10vw ;
+    border-top: 1px solid var(--gray);
     color: black;
+    gap: 24px;
+    
 }
 .About_Title, .About_Adress, .About_Description {
     color: black;
+    font-family: var(--font-karla-medium);
+}
+
+.About_Adress {
+    font-size: var(--font-size-large-pargraph);
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.About_Description {
+    font-size: var(--font-size-section-title);
+    font-weight: 500;
+}
+
+.About {
+    width: 400px;
+    padding: 16px;
+    border-radius: 16px;
+    
+}
+
+.Restaurant_Chef {
+    width: 60%;
+    height: 120%;
+    object-fit: cover;
+    border-radius: 16px;
+    align-self: flex-start;
+    justify-self: end;
+    border: 1px solid var(--gray);
+    z-index: 1;
+    box-shadow: 6px 6px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.Restaurant {
+    width: 60%;
+    height: 120%;
+    object-fit: cover;
+    border-radius: 16px;
+    align-self: flex-end;
+    border: 1px solid var(--gray);
+    box-shadow: 6px 6px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.About_images {
+    width: 400px;
+    height: 35vw;
+    display: grid;
+    
+}
+
+@media (max-width: 380px) {
+    .About_Section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 20px 0vw ;
+        border-top: 1px solid var(--gray);
+        color: black;
+        gap: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .About_Section {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }

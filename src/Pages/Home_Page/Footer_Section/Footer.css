@@ -1,0 +1,62 @@
+.Footer_Section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 10vw ;
+    border-top: 1px solid var(--gray);
+    color: black;
+    gap: 24px;
+    background-color: var(--primary-green);
+}
+
+
+.Logo_image {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
+
+.Logo {
+    background-color: var(--primary-yellow);
+    padding: 16px;
+}
+
+.Navigation {
+    display: block;
+    list-style-type: none;
+}
+
+.Navigation li {
+    margin: 20px 0;
+}
+
+.Navigation a {
+    text-decoration: none;
+    font-family: var(--font-karla-regular);
+    color: var(--primary-yellow);
+    letter-spacing: 1px;
+    font-size: 1em ;    
+    transition: color 0.3s ease;
+}
+
+.Navigation li:first-child a {
+    font-size: 1em ;
+    font-weight: 700;
+}
+
+ul li img {
+    width: 24px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+@media (max-width: 380px) {
+    .Footer_Section {
+    margin-top: 150px;
+    flex-wrap: wrap;
+    }
+}
+
+
+
+

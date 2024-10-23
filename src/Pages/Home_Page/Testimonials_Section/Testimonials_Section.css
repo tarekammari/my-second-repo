@@ -1,3 +1,8 @@
+.Testimonials_Section {
+    padding: 100px 10vw ;
+    border-top: 1px solid var(--gray);
+}
+
 .Testimonials_Cards {
     width: 75%;
     padding: 5vh 10vw;
@@ -12,4 +17,22 @@
 
 .Testimonials_Cards::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, and Opera */
+}
+
+@media (max-width: 380px) {
+    .About_Section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 20px 0vw ;
+        border-top: 1px solid var(--gray);
+        color: black;
+        gap: 0px;
+    }
+
+    .Testimonials_Section {
+        padding: 50px 4vw ;
+    }
+    
+
 }
