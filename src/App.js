@@ -12,15 +12,12 @@ import { header } from "react"
 function App() {
   return (
     <div className="App">
-      <header>
           <Nav />
           <Main />
           <Menu_Section />
           <Testimonials />
           <About />
           <Footer />
-      </header>
-      
     </div>
   );
 }

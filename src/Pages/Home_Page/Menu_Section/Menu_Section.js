@@ -5,7 +5,7 @@ import Button from "../../../Components/Button/Button";
 
 export default function Menu_Section () {
     return (
-      <div className="Menu_Section">
+      <div className="Menu_Section" id="Menu_Section">
         <div className="Section_header">
           <h2 className="Section_title">This weeks specials!</h2>
           <Button >Menu</Button>

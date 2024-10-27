@@ -3,6 +3,7 @@ import logo from "../../../Sources/Images/Logo.svg"
 import Basket from "../../../Sources/Images/Basket.svg"
 import hamburger from "../../../Sources/Images/hamburger.png"
 import React, { useState } from "react";
+import {Link} from "react-scroll";
 
 function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,17 +12,17 @@ function Nav() {
     setIsMenuOpen(!isMenuOpen); // Toggles between open and closed states
   };
 
+  
   return (
     <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
                   
       <img src={hamburger} className="hamburger" onClick={toggleMenu} />              
       <img className="little-lemon-logo" src={logo} alt="Little Lemon Logo" />
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#reservations">Reservations</a></li>
-        <li><a href="#order">Order Online</a></li>                    
+      <ul>        
+        <li><Link to="Main_Section" spy={true} smooth={50} duration={700} >Home</Link></li>
+        <li><Link to="Menu_Section" spy={true} smooth={50} duration={700} >Menu</Link> </li>
+        <li><Link to="Testimonials_Section" spy={true} smooth={50} duration={700} >Testimonials</Link></li>
+        <li><Link to="About_Section" spy={true} smooth={50} duration={700} >About</Link></li>        
       </ul>
 
       <div className="loginSide">

@@ -1,0 +1,21 @@
+.Images_Side {
+    width: 50%;
+    height: 100%;
+    display: grid;
+}
+
+.Reserve_Table_Section{
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 10vw ;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--gray);
+    background-color: var(--primary-green);
+}
+
+@media (min-width: 1280px) {
+    .Reserve_Table_Section {
+        padding: 100px calc((100vw - 1040px) / 2);
+    }
+}

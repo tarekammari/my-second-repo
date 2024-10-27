@@ -1,11 +1,11 @@
 import "./About_Section.css";
 import About_Data from "../../../Data/About_Description";
-import Restaurant from "../../../Sources/Images/restaurant.jpg"
-import Restaurant_Chef from "../../../Sources/Images/restaurant chef B.jpg"
+import Mario_b from "../../../Sources/Images/Mario and Adrian b.jpg"
+import Mario_A from "../../../Sources/Images/Mario and Adrian A.jpg"
 
 export default function About_Section () {
     return (
-      <div className="About_Section">
+      <div className="About_Section" id="About_Section">
         <div className="About">
           {About_Data.map((about, index) => (
             <div key={index}>
@@ -16,8 +16,8 @@ export default function About_Section () {
           ))}
         </div>
         <div className="About_images">
-          <img className="Restaurant_Chef" src={Restaurant_Chef} alt="#"/>
-          <img className="Restaurant" src={Restaurant} alt="#"/>
+          <img className="Restaurant_Chef" src={Mario_A} alt="#"/>
+          <img className="Restaurant" src={Mario_b} alt="#"/>
         </div>
       </div>
     );

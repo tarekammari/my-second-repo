@@ -61,3 +61,9 @@
 
     }
 }
+
+@media (min-width: 1280px) {
+    .Main_Home_Page {
+        padding: 1em calc((100vw - 1040px) / 2);
+    }
+}

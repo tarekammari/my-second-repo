@@ -57,6 +57,8 @@ ul li img {
     }
 }
 
-
-
-
+@media (min-width: 1280px) {
+    .Footer_Section {
+        padding: 50px calc((100vw - 1040px) / 2);
+    }
+}

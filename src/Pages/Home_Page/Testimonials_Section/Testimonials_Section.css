@@ -33,6 +33,14 @@
     .Testimonials_Section {
         padding: 50px 4vw ;
     }
-    
 
+    .Testimonials_Cards {
+        justify-content: start;
+    }
+}
+
+@media (min-width: 1280px) {
+    .Testimonials_Section {
+        padding: 100px calc((100vw - 1040px) / 2);
+    }
 }

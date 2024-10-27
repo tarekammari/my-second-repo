@@ -7,7 +7,7 @@ export default function Description () {
         <h1>Little Lemon</h1>
         <h2>Chigago</h2>
         <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with modern twist.</p>
-        <Button >Reserve a Table</Button>
+        <Button to={"/Reserve a Table"} >Reserve a Table</Button>
       </div>
     );
   };

@@ -70,6 +70,20 @@
   --font-size-pargraph: 16px;
   --font-size-mini: 14px;
 
+  --size-mini: 14px;
+  --size-small: 16px;
+  --size-18: 18px;
+  --size-20: 20px;
+  --size-24: 24px;
+  
+  --size-title: 32px;
+  --size-header: 40px;
+  --size-big: 56px;
+  --size-main-title: 64px;
+
+  --desktop: 1280px;
+  --tablet: 768px;
+  --mobile: 375px;
 }
 
 
@@ -86,4 +100,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html {
+  scroll-behavior: smooth;
 }

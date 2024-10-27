@@ -27,6 +27,7 @@ p {
     font-size: var(--font-size-large-pargraph);
     color: white;
     margin-top: 10px;
+    margin-bottom: 24px;
 
 }
 
