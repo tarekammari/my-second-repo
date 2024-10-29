@@ -5,7 +5,7 @@ import Testimonials_Cards from "../../../Components/Testimonials_Card/Testimonia
 
 export default function Testimonials_Section () {
     return (
-      <div className="Testimonials_Section">
+      <div id="Testimonials_Section" className="Testimonials_Section">
         <h2 className="Section_title">Testimonials</h2>
         <div className="Testimonials_Cards">
         {Reviews.map((review, index) => (

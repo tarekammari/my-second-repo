@@ -1,0 +1,100 @@
+.find_table_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 24px;
+    grid-auto-rows: auto;
+}
+
+.find_title {
+    grid-column: span 2;
+    grid-row:1 ;
+}
+
+.date {
+    grid-column: 1;
+    grid-row:2 ;
+}
+
+.time {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.number_diners {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.occasion {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.options_title {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.standard {
+    display: flex;
+    justify-content: space-between;
+    
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.outside {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.btn_lets_go {
+    grid-column: 2;
+    grid-row: 7;
+    justify-self: right;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    font-family: var(--font-karla-regular);
+    font-size: var(--size-24) ;
+    accent-color: blue;
+}
+
+.standard label, .outside label {
+    font-family: var(--font-karla-regular);
+    font-size: var(--size-24) ;
+}
+
+
+.date, time {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    color: white;
+    font-family: var(--font-karla-regular);
+    font-size: var(--size-18) ;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: var(--font-karla-medium);
+    font-size: var(--size-20);
+  }
+
+input:hover {
+    background-color: #45a049;
+  }
+
