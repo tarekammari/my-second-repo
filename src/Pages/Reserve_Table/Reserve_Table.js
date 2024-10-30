@@ -10,15 +10,15 @@ export default function Reserve_Table () {
         <>
         <Nav />
         <main className="Reserve_Table_Section">
-          <div className="Form_Side">
+          <div className="Title_Little_Lemon">
             <h1>Little Lemon</h1>
             <p>Chicago</p>
+          </div>
+        
+          <div className="Form_Side">            
               <Form />
           </div>
-          <div className="Images_Side">
-              <img className="Resrve_Restaurant" src={Resterant_Chef} alt="#"/>
-              <img className="Resrve_Restaurant_Chef" src={Resterant} alt="#"/>
-          </div>
+          
         </main>
         <Footer />
         </>

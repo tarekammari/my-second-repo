@@ -1,59 +1,34 @@
-.Images_Side {
-    width: 45%;
-    height: 80%;
-    display: grid;
-    max-width: 450px;
-    align-self: center;
-}
-
-.Form_Side {
-    width: 50%;
-}
-
-.Resrve_Restaurant{
-    border: 1px solid var(--gray);
-    box-shadow: 6px 6px 6px -1px rgba(0, 0, 0, 0.2);
-    object-fit: cover;
-    border-radius: var(--size-small);
-    position: absolute;
-    align-self: flex-start;
-    justify-self: flex-end;
-    width: 45%;
-    height: 45%;
-    z-index: 2;
-    max-width: 200px;
-    max-height: 200px;
-}
-
-.Resrve_Restaurant_Chef {
-    width: 90%;
-    height: 90%;
-    object-fit: cover;
-    border: 1px solid var(--gray);
-    z-index: 1;
-    box-shadow: 6px 6px 6px -1px rgba(0, 0, 0, 0.2);
-    border-radius: var(--size-small);
-    align-self: flex-end;
-    justify-self: start;
-    max-width: 400px;
-    max-height: 450px;
-}
-
-
-
 .Reserve_Table_Section{
-    height: 70vh;
-    display: flex;
-    justify-content: space-between;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     padding: 100px 10vw ;
     flex-wrap: wrap;
     border-top: 1px solid var(--gray);
     background-color: var(--primary-green);
-    gap: 24px;
+    gap: 8px;
 }
+
+
+.Form_Side {
+    width: 100%;
+}
+
 
 @media (min-width: 1280px) {
     .Reserve_Table_Section {
         padding: 100px calc((100vw - 1040px) / 2);
+    }
+}
+
+@media (max-width: 880px) {
+    
+
+}
+
+@media (max-width: 560px) {
+    .Reserve_Table_Section {
+        padding: 100px 6vw;
     }
 }

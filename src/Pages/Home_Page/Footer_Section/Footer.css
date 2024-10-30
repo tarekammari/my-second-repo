@@ -52,7 +52,6 @@ ul li img {
 
 @media (max-width: 380px) {
     .Footer_Section {
-    margin-top: 150px;
     flex-wrap: wrap;
     }
 }

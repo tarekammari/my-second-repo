@@ -40,12 +40,8 @@ function Nav() {
       <Link className="logo_link" to="/">
         <img className="little-lemon-logo" src={logo} alt="Little Lemon Logo" />
       </Link>
-                    
-      
       <div class="icon-bar">
-        
         <Link to="/">Home</Link>
-                
         <a href="#Menu_Section" >Menu</a>
         <a href="#Testimonials_Section" >Testimonials</a>
         <a href="#About_Section" >About</a>

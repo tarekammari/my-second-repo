@@ -64,6 +64,7 @@
 
 @media (max-width: 380px) {
     .About_Section {
+        height: auto;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -71,6 +72,9 @@
         border-top: 1px solid var(--gray);
         color: black;
         gap: 0px;
+    }
+    .About_images {
+        height: auto;
     }
 }
 
