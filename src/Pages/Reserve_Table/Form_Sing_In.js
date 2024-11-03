@@ -1,39 +1,116 @@
 import "./Form_Sing_In.css";
-import Button from "../../Components/Button/Button"
+import { useState } from "react";
+
 
 export default function Form_Sing_In () {
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState({
+        value: "",
+        isTouched: false,
+    });
+
+    const getIsFormValid = () => {
+        return (
+            firstName &&
+            email &&
+            password 
+        )
+    }
+
+    const clearForm = () => {
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setPassword({
+            value: "",
+            isTouched: false,
+        });
+    }
+
+    const handelSubmit = (e) => {
+        e.preventDefault();
+        alert("Account created!");
+        clearForm();
+    };
+
+
     return (
         <>
-            <form className="form_Sing_In_form">
+            <form onSubmit={handelSubmit}
+            className="form_Sing_In_form">
+                <fieldset>
                 <div className="left">
 
-                </div>
-                <div className="right">
-
-                    <label for="firstName">First Name:</label>
-                    <input name="firstName" id="firstName" type="text" autocomplete="given-name" />
-
-                    <label for="lastName">Last Name:</label>
-                    <input name="lastName" id="lastName" type="text" autocomplete="family-name" />
-
-                    <label for="telphone">telphone:</label>
-                    <input name="telphone" id="telphone" type="telphone" autocomplete="tel-national" />
-
-                    <label for="email">Email:</label>
-                    <input name="email" id="email" type="email" autocomplete="off" />
-
-                    <label for="password">Passowrd:</label>
-                    <input name="password" id="password" type="password" autocomplete="one-time-code" />
-
-                    <label for="options">Passowrd:</label>
-                    <input name="options" id="options" type="text" autocomplete="off" />
-
-
-
-                    <div className="btn_lets_go">
-                        <Button >&nbsp;&nbsp;&nbsp;&nbsp;Continue&nbsp;&nbsp;&nbsp;&nbsp;</Button>
                     </div>
-               </div>
+                    <div className="right">
+                        
+                        <div className="Field">
+                            <label >
+                                First Name <sup>*</sup>
+                            </label>
+                            <input
+                            type="text" 
+                            autocomplete="given-name" 
+                            required/>
+                        </div>
+
+                        
+                        <div className="Field">
+                            <label >
+                                Last Name <sup>*</sup>
+                            </label>
+                            <input
+                            type="text" 
+                            autocomplete="family-name" 
+                            required/>
+                        </div>
+                        
+
+                        <div className="Field">
+                            <label >
+                                telphone
+                            </label>
+                            <input  
+                            type="telphone" 
+                            autocomplete="tel-national" 
+                            required/>
+                        </div>
+
+
+                        <div className="Field">
+                            <label >
+                                Email <sup>*</sup>
+                            </label>                            
+                            <input                              
+                            type="email" 
+                            autocomplete="off" 
+                            required/>
+                        </div>
+                        
+                        <div className="Field">
+                            <label >
+                                Passowrd <sup>*</sup>
+                            </label>
+                            <input                             
+                            type="password" 
+                            autocomplete="one-time-code" 
+                            required/>                            
+                        </div>                        
+
+                        
+
+                        
+
+                        <div className="btn_lets_go">
+                            <button type="submit"  >Continue</button>
+                        </div>
+                    </div>
+
+
+                </fieldset>
+                
             </form>
         </>
     );
