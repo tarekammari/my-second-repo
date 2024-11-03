@@ -8,7 +8,7 @@ import "./Reserve_Table.css";
 export default function Reserve_Table () {
     return (
         <>
-        <Nav />
+        <Nav show={false} />
         <main className="Reserve_Table_Section">
           <div className="Title_Little_Lemon">
             <h1>Little Lemon</h1>

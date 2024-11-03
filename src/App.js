@@ -12,7 +12,7 @@ import { header } from "react"
 function App() {
   return (
     <div className="App">
-          <Nav />
+          <Nav show={true} />
           <Main />
           <Menu_Section />
           <Testimonials />

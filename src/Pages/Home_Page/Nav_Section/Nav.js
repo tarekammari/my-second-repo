@@ -5,7 +5,7 @@ import hamburger from "../../../Sources/Images/hamburger.png"
 import React, { useEffect, useState } from "react";
 import {Link} from "react-router-dom";
 
-function Nav() {
+function Nav(props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showNav, setShowNav] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -42,9 +42,9 @@ function Nav() {
       </Link>
       <div class="icon-bar">
         <Link to="/">Home</Link>
-        <a href="#Menu_Section" >Menu</a>
-        <a href="#Testimonials_Section" >Testimonials</a>
-        <a href="#About_Section" >About</a>
+        {props.show ? <a href="#Menu_Section" >Menu</a> : <a></a>}  
+        {props.show ? <a href="#Testimonials_Section" >Testimonials</a> : <a></a>}  
+        {props.show ? <a href="#About_Section" >About</a> : <a></a>}
       </div>
 
       <div className="loginSide">
